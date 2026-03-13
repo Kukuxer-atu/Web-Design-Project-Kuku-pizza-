@@ -1,72 +1,83 @@
 
 
+/* Navbar container */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* logo will be centered */
+  background-color: #333;
+  padding: 0.8rem 1rem;
+  position: relative;
+  flex-wrap: wrap; /* allow wrapping on mobile */
+}
+
+/* Logo */
 .logo {
   display: flex;
-  padding-right: 150px;
+  align-items: center;
   gap: 8px;
   font-family: 'Pacifico', cursive;
   font-size: 1.6rem;
   color: white;
+  text-align: center;
+  margin: 0 1rem; /* spacing from links */
 }
 
-.pizza-icon {
-  width: 48px;
-  height: 48px;
-  fill: white;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* center everything horizontally */
-  background-color: #333;
-  padding: 0.8rem 1rem;
-  position: relative; /* keep this if you want menu links absolute later */
-}
-
-
+/* Menu links */
 nav ul {
   list-style: none;
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
 }
 
+/* Links left and right */
+.nav-left { margin-right: auto; }
+.nav-right { margin-left: auto; }
+
+/* Link styles */
 nav a {
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
-  letter-spacing: 1px;
-  position: relative;
   transition: color 0.3s;
 }
 
-
-nav a:hover {
-  color: #ffcc66;
-}
-
-
-nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 0;
-  height: 2px;
-  background: #ffcc66;
-  transition: width 0.3s ease;
-}
-
-nav a:hover::after {
-  width: 100%;
-}
-
+nav a:hover,
 nav a.active {
   color: #ffcc66;
 }
 
-nav a.active::after {
-  width: 100%;
+/* Pizza icon */
+.pizza-icon {
+  width: 40px;
+  height: 40px;
+  fill: white;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .nav-left,
+  .nav-right {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 1rem;
+    margin: 0;
+  }
+
+  .logo {
+    order: -1; /* put logo on top */
+    margin: 0 0 1rem 0;
+  }
 }
 
 
