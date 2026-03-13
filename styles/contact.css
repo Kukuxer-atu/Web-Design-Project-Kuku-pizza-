@@ -1,0 +1,82 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Pacifico', cursive;
+}
+
+
+body{
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+}
+
+main{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  padding:40px 20px;
+}
+.icon{
+  width:20px;
+  height:20px;
+  fill:#333;
+}
+
+
+
+.contact-wrapper{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+
+.student-id{
+  margin-top:15px;
+  opacity:0;
+  transition:opacity 0.3s;
+}
+
+.contact-card:hover + .student-id{
+  opacity:1;
+}
+
+.contact-card h1{
+  margin-bottom:10px;
+}
+
+.role{
+  margin-bottom:25px;
+  color:#666;
+}
+
+
+
+.contact-item{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  margin:12px 0;
+  font-size:1.1rem;
+}
+
+.contact-item a{
+  text-decoration:none;
+  color:#333;
+}
+
+.contact-item a:hover{
+  color:#ffcc66;
+}
+
+/* hidden student id */
+
+.hidden-id{
+  display:none;
+}
