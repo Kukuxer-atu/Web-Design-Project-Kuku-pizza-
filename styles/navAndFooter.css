@@ -1,17 +1,12 @@
 
 
 .logo {
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
   display: flex;
-  align-items: center;
+  padding-right: 150px;
   gap: 8px;
   font-family: 'Pacifico', cursive;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: white;
-  padding: 20px;
 }
 
 .pizza-icon {
@@ -20,13 +15,15 @@
   fill: white;
 }
 
- nav {
-      display: flex;
-      justify-content: space-around;
-      background-color: #333;
-      padding: 1rem;
-      position: relative;
-    }
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center everything horizontally */
+  background-color: #333;
+  padding: 0.8rem 1rem;
+  position: relative; /* keep this if you want menu links absolute later */
+}
+
 
 nav ul {
   list-style: none;
