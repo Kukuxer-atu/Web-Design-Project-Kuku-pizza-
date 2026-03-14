@@ -22,9 +22,11 @@
     </svg>
   </div>
 
+  <button class="hamburger" aria-label="Toggle menu">&#9776;</button>
+
   <ul class="nav-right">
     <li><a href="basket.html">Basket</a></li>
-    <li><a class="active"  href="contact.html">Contact</a></li>
+    <li><a  class="active"  href="contact.html">Contact</a></li>
   </ul>
 </nav>
 
@@ -103,5 +105,13 @@
   <footer>
     <p>&copy; 2026 Kuku-pizza All rights reserved ©. </p>
   </footer>
+  <script>
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('nav');
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+</script>
 </body>
 </html>
