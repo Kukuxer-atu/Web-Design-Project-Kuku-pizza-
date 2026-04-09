@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pepperoni - Kuku Pizza</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/navAndFooter.css">
+  <link rel="stylesheet" href="../styles/pizza.css">
+</head>
+
+<body>
+
+<!-- NAV (same as yours) -->
+<nav>
+  <ul class="nav-left">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../about.html">About</a></li>
+  </ul>
+
+  <div class="logo">
+    <a href="../index.html" style="text-decoration:none;color:white;">
+      <span><span style="color:#750796;">Kuku</span>-pizza</span>
+    </a>
+  </div>
+
+  <button class="hamburger">&#9776;</button>
+
+  <ul class="nav-right">
+    <li><a href="../basket.html">Basket</a></li>
+    <li><a href="../contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="pizza-page">
+  <div class="pizza-container">
+
+    <div class="pizza-image">
+      <img src="https://plus.unsplash.com/premium_photo-1733259709671-9dbf22bf02cc?q=80&w=880" alt="Pepperoni">
+    </div>
+
+    <div class="pizza-info">
+      <h1>Pepperoni</h1>
+
+      <p class="desc">
+        Classic American-style pizza topped with spicy pepperoni and melted mozzarella.
+      </p>
+
+      <div class="ingredients">
+        <h3>Ingredients</h3>
+        <ul>
+          <li>🍅 Tomato sauce</li>
+          <li>🧀 Mozzarella</li>
+          <li>🥓 Pepperoni</li>
+          <li>🌿 Herbs</li>
+        </ul>
+      </div>
+
+      <div class="bottom">
+        <span class="price">€11.99</span>
+        <button>Add to Basket</button>
+      </div>
+    </div>
+
+  </div>
+  <a href="pizza-margherita.html" class="nav-arrow left">&#10094;</a>
+<a href="pizza-hawaiian.html" class="nav-arrow right">&#10095;</a>
+</main>
+
+<footer>
+  <p>&copy; 2026 Kuku-pizza</p>
+</footer>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('nav');
+  hamburger.addEventListener('click', () => nav.classList.toggle('open'));
+</script>
+
+</body>
+</html>

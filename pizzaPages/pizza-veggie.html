@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Margherita - Kuku Pizza</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles/navAndFooter.css">
+  <link rel="stylesheet" href="../styles/pizza.css">
+</head>
+
+<body>
+
+<nav>
+  <ul class="nav-left">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../about.html">About</a></li>
+  </ul>
+
+  <div class="logo">
+    <span>
+      <a style="color:#750796;font-size:1em;">Kuku</a>-pizza
+    </span>
+    <svg class="pizza-icon" xmlns="http://www.w3.org/2000/svg" viewBox="-1 0 19 19">
+      <path d="M16.417 9.579A7.917 7.917 0 1 1 8.5 1.662a7.917 7.917 0 0 1 7.917 7.917zm-4.165-4.6a10.965 10.965 0 0 0-7.662-.004.396.396 0 1 0 .275.742 10.173 10.173 0 0 1 7.11.003.396.396 0 1 0 .277-.741zm-.435 1.48s-.23-.09-.498-.175a9.597 9.597 0 0 0-5.697-.034c-.3.09-.596.205-.596.205a.308.308 0 0 0-.175.407l3.444 8.327c.067.16.175.16.242 0l3.453-8.323a.31.31 0 0 0-.173-.408zM6.875 8.662a1.026 1.026 0 1 0-1.026-1.026 1.026 1.026 0 0 0 1.026 1.026zm1.546 3.852a1.026 1.026 0 1 0-1.026-1.025 1.026 1.026 0 0 0 1.026 1.025zm1.16-2.747a1.026 1.026 0 1 0-1.026-1.026A1.026 1.026 0 0 0 9.58 9.768z"/>
+    </svg>
+  </div>
+
+  <button class="hamburger">&#9776;</button>
+
+  <ul class="nav-right">
+    <li><a href="../basket.html">Basket</a></li>
+    <li><a href="../contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+
+<main class="pizza-page">
+  <div class="pizza-container">
+
+    <div class="pizza-image">
+      <img src="https://media.istockphoto.com/id/184098729/photo/vegetarian-pizza-03.webp?a=1&b=1&s=612x612&w=0&k=20&c=7G7Vm_Hj6OLfeZiUX12hQEr8vaPLPIALa01kEjq6prg=" alt="Veggie">
+    </div>
+
+    <div class="pizza-info">
+      <h1>Veggie</h1>
+
+      <p class="desc">
+        Fresh and colorful pizza loaded with vegetables and mozzarella.
+      </p>
+
+      <div class="ingredients">
+        <h3>Ingredients</h3>
+        <ul>
+          <li>🍅 Tomato sauce</li>
+          <li>🧀 Mozzarella</li>
+          <li>🫑 Peppers</li>
+          <li>🫒 Olives</li>
+          <li>🍄 Mushrooms</li>
+          <li>🧅 Onions</li>
+        </ul>
+      </div>
+
+      <div class="bottom">
+        <span class="price">€10.49</span>
+        <button>Add to Basket</button>
+      </div>
+    </div>
+
+  </div>
+  <a href="pizza-hawaiian.html" class="nav-arrow left">&#10094;</a>
+<a href="pizza-margherita.html" class="nav-arrow right">&#10095;</a>
+</main>
+
+<footer>
+  <p>&copy; 2026 Kuku-pizza</p>
+</footer>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('nav');
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+</script>
+
+</body>
+</html>

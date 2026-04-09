@@ -30,3 +30,71 @@ main {
 h1 {
   font-family: 'Pacifico', cursive;
 }
+/* PAGE */
+
+.basket-page{
+  max-width:900px;
+  margin:auto;
+  font-family:'Open Sans', sans-serif;
+  line-height:1.6;
+}
+
+/* TEXT */
+
+.intro{
+  margin-bottom:20px;
+  color:#555;
+}
+
+/* FLOAT IMAGE */
+
+.float-img{
+  float:right;
+  width:250px;
+  margin:0 0 20px 20px;
+  border-radius:12px;
+}
+
+/* LISTS */
+
+ul, ol{
+  margin:20px 0;
+  padding-left:20px;
+}
+
+/* TABLE */
+
+.stats-table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:20px;
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stats-table th,
+.stats-table td{
+  padding:12px;
+  text-align:center;
+}
+
+.stats-table th{
+  background:#750796;
+  color:white;
+}
+
+.stats-table tr:nth-child(even){
+  background:#f4f4f4;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+  .float-img{
+    float:none;
+    width:100%;
+    margin:20px 0;
+  }
+}
