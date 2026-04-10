@@ -75,8 +75,65 @@ main{
   color:#ffcc66;
 }
 
-/* hidden student id */
+/* FLOAT IMAGE */
+.float-img{
+  float:right;
+  width:200px;
+  margin:0 0 20px 20px;
+  border-radius:12px;
+}
 
-.hidden-id{
-  display:none;
+/* FORM */
+.contact-form{
+  margin-top:30px;
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  width:300px;
+  font-family:'Open Sans', sans-serif;
+}
+
+.contact-form h2{
+  margin-bottom:15px;
+}
+
+.contact-form label{
+  display:block;
+  margin-top:10px;
+  font-size:0.9rem;
+}
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:8px;
+  margin-top:5px;
+  border:1px solid #ccc;
+  border-radius:6px;
+}
+
+.contact-form textarea{
+  resize:none;
+  height:80px;
+}
+
+/* RED STAR */
+.required{
+  color:red;
+}
+
+/* MESSAGE */
+#form-msg{
+  margin-top:10px;
+  font-size:0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+  .float-img{
+    float:none;
+    width:100%;
+    margin:20px 0;
+  }
 }
